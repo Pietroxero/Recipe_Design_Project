@@ -26,7 +26,7 @@ THEN I want to save it to favorites list
 1) https://rapidapi.com/spoonacular/api/recipe-food-nutrition
     https://spoonacular.com/food-api
     https://spoonacular.com/application/frontend/downloads/spoonacular-api-slides.pdf
-2) https://rapidapi.com/webknox/api/recipecd 
+2) https://rapidapi.com/thecocktaildb/api/the-cocktail-db
 
 
 ## Breakdown of Tasks

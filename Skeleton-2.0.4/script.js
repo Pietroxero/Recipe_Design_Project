@@ -1,12 +1,29 @@
-const options = {
+//random recipe api
+const settings = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '7dfbb0a2cbmsh2f7cbb4095725d4p16ddffjsn207b8aa817bd',
-		'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
+		'X-RapidAPI-Key': '1f324b5b8bmsh466e2ff07149a7cp1e32d6jsn01419d3b8f86',
+		'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
 	}
 };
 
-fetch('https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes', options)
+fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?tags=vegetarian%2Cdessert&number=1', settings)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+
+
+//cocktail api set up
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '1f324b5b8bmsh466e2ff07149a7cp1e32d6jsn01419d3b8f86',
+		'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
+	}
+};
+
+fetch('https://the-cocktail-db.p.rapidapi.com/filter.php?i=Gin', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
