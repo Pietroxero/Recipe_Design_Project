@@ -21,7 +21,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="./css/mainpage.css"
+=======
+  <link rel="stylesheet" href="./css/style.css">
+>>>>>>> main
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -41,22 +45,32 @@
    <div class="two-half column">
 <a class="button button-primary" href="#">Food</a>
 <button class="button-primary">Wine</button>
-<a class="button button-primary" href="#">Random</a>
+<a class="button button-primary" href="#">I'm Feeling Lucky</a>
 <button class="button-primary">Contact</button>
 </div>
 </div>
 </div>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Menu</h4>
-        <p>Display food recipes based on keywords,
-          and will display those keyword specific recipes with ingredients.</p>
-      </div>
-    </div>
+<main>
+  <div class="row">
+      <div class='col-3 mx-4' id='left-column'>
+          <div class ='row border-bottom pb-2'id = 'search'>
+              <h1 class ='display-6' id='searchfood'><strong>Search for a Recipe(s):</strong></h1>
+              
+              <input class ='rounded border-1'type = 'text' id ="userInput" placeholder="Enter Recipe Keyword"/>
+              <br>
+              <button class = 'my-1 mt-2 rounded' id ="searchBtn" type ="button">Let's get cookin'</button>
+              <div class="card mt-5" id="recent">
+                  <h1 class ='display-6' id='foodhistory'>Search history:</h1>
+                  <ul class="list-group list-group-flush" id="recently-searched-list">
+                   </ul> 
+                   <button class = 'my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
+                </div>
   </div>
+</main>
+
+<div class="product"></div>
+<div class="product"></div>
+<div class="product"></div>
 
   <script src="./script.js"></script>
 <!-- End Document
