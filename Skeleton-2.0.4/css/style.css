@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background: #eee;
     padding: 100px 0;
@@ -19,3 +20,53 @@ background-size: 200px 200px, 90% 20%, 100% 100%;
 background-position: center 20%, center 70%, 0 0;
 background-repeat: no-repeat;
 } 
+=======
+
+.search-box {
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+ /* .search-box li {
+    flex-basis: 500px; width: 500px;
+    position: relative;
+    cursor: pointer;
+} 
+
+
+#click-button {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(206, 245, 212, 0.63);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: white;
+    border-radius: 8px;
+    border-style: double;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    /* Centering overlay text  */
+     /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }  */
+
+  /* Hover feature.*/
+  /* .search-box li:hover .overlay {
+    transform: scale(1);
+  }  */ 
+>>>>>>> b138faebc90264d4d4339ad2dc28d7675c6dd2bc
