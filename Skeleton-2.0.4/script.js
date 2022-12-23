@@ -28,23 +28,9 @@ fetch('https://the-cocktail-db.p.rapidapi.com/filter.php?i=Gin', options)
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
 
-    $('.foodhistory').on('click', '.clrhistoryBtn', function (event) {
-        event.preventDefault();
-        // Collects the value from the button text
-        let searchfood = $(this).text();
-        // Runs the function to call the API and display retrieved data
-        call(searchfood);
-    });
-
-
-    $('#clrhistoryBtn').on('click', function (event) {
-        event.preventDefault();
-        // Clears local storage
-        window.localStorage.clear();
-        // Clears the search history element
-        $('.foodhistory').empty();
-        searchHistory = [];
-        renderButtons();
-        // Clears and resets the form
-        $('form')[0].reset();
-    });
+    
+<script>
+function basicPopup(url) {
+popupWindow = window.open(url,'action','height=550,width=800,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
+}
+</script>
