@@ -13,7 +13,6 @@ fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/rando
 	.catch(err => console.error(err));
 
 
-
 //cocktail api set up
 const options = {
 	method: 'GET',
@@ -27,3 +26,6 @@ fetch('https://the-cocktail-db.p.rapidapi.com/filter.php?i=Gin', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+
+
+	

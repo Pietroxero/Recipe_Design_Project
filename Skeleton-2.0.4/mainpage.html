@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -30,48 +31,101 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header>
+  <!-- <div class="container"> -->
+    <h1>Recipes By Keywords</h1>
+    <img src="./images/recipe.png" alt="search">
+  <!-- </div> -->
+
   <div class="container">
-  <h1>Recipes By Keywords</h1>
-</div>
-
-<div class="container">
-  <div class="row">
-   <div class="two-half column">
-<a class="button button-primary" href="#">Food</a>
-<button class="button-primary">Wine</button>
-<a class="button button-primary" href="#">I'm Feeling Lucky</a>
-<button class="button-primary">Contact</button>
-</div>
-</div>
-</div>
-<main>
-  <div class="row">
-      <div class='col-3 mx-4' id='left-column'>
-          <div class ='row border-bottom pb-2'id = 'search'>
-              <h1 class ='display-6' id='searchfood'><strong>Search for a Recipe(s):</strong></h1>
-              
-              <input class ='rounded border-1'type = 'text' id ="userInput" placeholder="Enter Recipe Keyword"/>
-              <br>
-              <button class = 'my-1 mt-2 rounded' id ="searchBtn" type ="button">Let's get cookin'</button>
-              <div class="card mt-5" id="recent">
-                  <h1 class ='display-6' id='foodhistory'>Search history:</h1>
-                  <ul class="list-group list-group-flush" id="recently-searched-list">
-                   </ul> 
-                   <button class = 'my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
-                </div>
+    <div class="row">
+      <div class="two-half column">
+        <a class="button button-primary" href="">Food</a>
+        <a class="button button-primary" href="https://www.totalwine.com/store-info/washington-seattle-northgate/1409?&pid=cpc:Performance+Max%2BUS%2BWASH%2BENG%2BSPART::google::&gclid=CjwKCAiAnZCdBhBmEiwA8nDQxc8JRSrB62N4936poFQvhZSZCbwoMMsr1yEn_6Ct5U4Lnx5XywlSrhoC2vsQAvD_BwE&gclsrc=aw.ds"> Wine </a>
+        <a class="button button-primary" href="https://www.eatfirst.com.au/en-au/c/blog/fun-facts-about-food">I'm Feeling Lucky</a>
+        <a class="button button-primary" href="https://www.listchallenges.com/ginormous-list-of-washington-state-restaurants"> Contact </a>
+      </div>
+    </div>
   </div>
-</main>
+</header>
+  <main>
+    <div class="row">
+      <div class='col-3 mx-4' id='left-column'>
+        <div class='row border-bottom pb-2' id='search'>
+          <h1 class='display-6' id='searchfood'><strong>Search for a Recipe(s):</strong></h1>
 
-<div class="product"></div>
-<div class="product"></div>
-<div class="product"></div>
+          <input class='rounded border-1' type='text' id="userInput" placeholder="Enter Recipe Keyword" />
+          <br>
+          <button class='my-1 mt-2 rounded' id="searchBtn" type="button">Let's get cookin'</button>
+          <div class="card mt-5" id="recent">
+            <h1 class='display-6' id='foodhistory'>Search history:</h1>
+            <ul class="list-group list-group-flush" id="recently-searched-list">
+            </ul>
+            <button class='my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
+          </div>
+        </div>
+  </main>
+<!-- 1st recipe -->
+<div id="recipe-container">
+  <div class="recipe">
+    <div class="recipe-title"> Recipe Title </div>
+    <div class="recipe-photo">
+      <img src="./images/recipe-img.PNG" alt="food-photo">
+    </div>
+    <div class="recipe-instruction">
+      <ul>
+        <li> Time Prepare: </li>
+        <a class = "view-btn" href="#"> View Recipe </a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 2nd recipe -->
+<div id="recipe-container">
+  <div class="recipe">
+    <div class="recipe-title"> Recipe Title </div>
+    <div class="recipe-photo">
+      <img src="./images/recipe-img.PNG" alt="food-photo">
+    </div>
+    <div class="recipe-instruction">
+      <ul>
+        <li> Time Prepare: </li>
+        <a class = "view-btn" href="#"> View Recipe </a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 3rd recipe  -->
+<div id="recipe-container">
+  <div class="recipe">
+    <div class="recipe-title"> Recipe Title </div>
+    <div class="recipe-photo">
+      <img src="./images/recipe-img.PNG" alt="food-photo">
+    </div>
+    <div class="recipe-instruction">
+        <p class="time"> Time Prepare: </p>
+        <a class = "view-btn" href="#"> View Recipe </a>
+      
+    </div>
+  </div>
+</div>
+
+
+  <!-- <div class="product"> </div>
+  <div class="product"></div>
+  <div class="product"></div> -->
+  
 
   <script src="./script.js"></script>
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>
