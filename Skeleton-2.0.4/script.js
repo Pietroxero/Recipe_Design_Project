@@ -27,3 +27,10 @@ fetch('https://the-cocktail-db.p.rapidapi.com/filter.php?i=Gin', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+
+    
+<script>
+function basicPopup(url) {
+popupWindow = window.open(url,'action','height=550,width=800,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
+}
+</script>
