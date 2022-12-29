@@ -1,12 +1,110 @@
 body {
     background-image: linear-gradient(#FFFFFF, rgb(255, 122, 89));
-    padding: 100px 0;
+    padding: 6.5px 0;
     text-align: center;
+    /* justify-content:center; */
+    margin: auto;
+    height: auto;
+    /* display: flex; */
 }
+
 h1 {
+    margin: auto;
     font-family: 'Pacifico', cursive;
     font-size: 75px;
 }
-img {
-    border-radius: 25px;
+
+.middle{
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
+
+.container:hover .middle {
+    opacity: 1;
+  }
+  
+
+.container {
+    margin: auto;
+    opacity: 1;
+    position: relative; 
+    width: 45%;
+  /* max-width: 100px;  */
+  }
+  
+  
+  .container img {
+    position: relative; 
+    transition: .5s ease;
+    width: auto;
+    height: auto;
+  }
+
+
+  .container:hover img {
+    position: relative; 
+    opacity: 0.3;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+  }
+
+  .container .btn {
+    opacity: 0;
+    font-family: 'Pacifico', cursive;
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #1EAEDB;
+    color: white;
+    font-size: 16px;
+    padding: 14px 34px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+  }
+
+  .container:hover .btn {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: .1s ease;
+    opacity: 1;
+    background-color: #1EAEDB;
+    backface-visibility: hidden;
+  }
+
+/* .image {
+    border-radius: 25px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+} */
+
+/* .btn{
+    border: none;
+    background-color: hsl(360, 91%, 36%);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+      0px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+} */
