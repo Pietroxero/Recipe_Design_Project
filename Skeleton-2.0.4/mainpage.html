@@ -38,9 +38,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header>
   
-    <h1>Recipes By Keywords</h1>
-
-<div class="container">
+    <h1 >Recipes By Keywords</h1>
+<!-- commenting out these boxes as we did not have enough time to finish up the design -->
+<!-- <div class="container">
   <div class="row">
    <div class="two-half column">
 <a class="button button-primary" href="#">Food</a>
@@ -49,7 +49,8 @@
 <button class="button-primary">Contact</button>
 </div>
 </div>
-</div>
+</div> -->
+</header>
 <main>
   <!-- <div class="row">
       <div class='col-3 mx-4' id='left-column'>
@@ -67,20 +68,27 @@
                 </div>
   </div> -->
 </main>
-
+<!-- button with ID of 'searchbtn' will be the button used to search for recipes -->
+<!-- button with ID of 'searchbtn2' will be the button used to search for cocktails -->
           <input class='rounded border-1' type='text' id="userInput" placeholder="Enter Recipe Keyword" />
           <br>
           <!-- button for food recipe -->
-          <button class='my-1 mt-2 rounded' id="searchBtn" type="button">Let's get cookin'</button>
+          <button class='my-1 mt-2 rounded button-primary' id="searchBtn" type="button" style="font-family: 'Pacifico', cursive;
+          ">Let's get cookin'</button>
           <!-- button for cocktail recipe -->
-          <button class='my-1 mt-2 rounded' id="searchBtn2" type="button"> Let's make cocktail </button>
+          <button class='my-1 mt-2 rounded button-primary' id="searchBtn2" type="button" style="font-family: 'Pacifico', cursive;
+          "> Let's make cocktail </button>
           <div class="card mt-5" id="recent">
-            <h2 class='display-6' id='foodhistory'>Search history:</h2>
+            <h2 class='display-6' id='foodhistory' style="font-family: 'Pacifico', cursive;
+            ">Search history:</h2>
             <ul class="list-group list-group-flush" id="recently-searched-list">
             </ul>
-            <button class='my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
+            <button class='my-1 mt-2 rounded button-primary' id='clrhistoryBtn' style="font-family: 'Pacifico', cursive;
+            ">Clear History</button>
           </div>
-
+          <!-- this class is used in the javascript reference, it is where the recipe and cocktail card will be appended -->
+          <div class ="search-result" ></div>
+<!-- script link to our javascript -->
   <script src="./script.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
