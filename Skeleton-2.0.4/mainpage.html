@@ -16,13 +16,13 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Pacifico&display=swap" rel="stylesheet">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="./css/mainpage.css">
+  <!-- <link rel="stylesheet" href="./css/mainpage.css"> -->
   <link rel="stylesheet" href="./css/style.css">
 
 
@@ -37,133 +37,102 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header>
-  <!-- <div class="container"> -->
+  
     <h1>Recipes By Keywords</h1>
-    <img src="./images/recipe.png" alt="search">
-  <!-- </div> -->
 
-  <div class="container">
-<<<<<<< HEAD
-    <div class="row">
-      <div class="two-half column">
-        <a class="button button-primary" href="">Food</a>
-        <a class="button button-primary" href="https://www.totalwine.com/store-info/washington-seattle-northgate/1409?&pid=cpc:Performance+Max%2BUS%2BWASH%2BENG%2BSPART::google::&gclid=CjwKCAiAnZCdBhBmEiwA8nDQxc8JRSrB62N4936poFQvhZSZCbwoMMsr1yEn_6Ct5U4Lnx5XywlSrhoC2vsQAvD_BwE&gclsrc=aw.ds"> Wine </a>
-        <a class="button button-primary" href="https://www.eatfirst.com.au/en-au/c/blog/fun-facts-about-food">I'm Feeling Lucky</a>
-        <a class="button button-primary" href="https://www.listchallenges.com/ginormous-list-of-washington-state-restaurants"> Contact </a>
+    <div class="container">
+      <div class="row">
+        <div class="two-half column">
+          <a class="button button-primary" href="#">Food</a>
+          <button class="button-primary">Wine</button>
+          <a class="button button-primary" href="#">I'm Feeling Lucky</a>
+          <button class="button-primary">Contact</button>
+        </div>
       </div>
     </div>
-=======
-  <h1>Recipes By Keywords</h1>
-</div>
-
-<div class="container">
-  <div class="row">
-   <div class="two-half column">
-<a class="button button-primary" href="#">Food</a>
-<button class="button-primary">Wine</button>
-<a class="button button-primary" href="#">I'm Feeling Lucky</a>
-<button class="button-primary">Contact</button>
-</div>
-</div>
-</div>
-<main>
-  <div class="row">
-      <div class='col-3 mx-4' id='left-column'>
-          <div class ='row border-bottom pb-2'id = 'search'>
-              <h2 class ='display-6' id='searchfood'><strong>Search for a Recipe(s):</strong></h2>
-              
-              <input class ='rounded border-1'type = 'text' id ="userInput" placeholder="Enter Recipe Keyword"/>
-              <br>
-              <button class = 'my-1 mt-2 rounded' id ="searchBtn" type ="button">Let's get cookin'</button>
-              <div class="card mt-5" id="recent">
-                  <h2 class ='display-6' id='foodhistory'>Search history:</h2>
-                  <ul class="list-group list-group-flush" id="recently-searched-list">
-                   </ul> 
-                   <button class = 'my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
-                </div>
->>>>>>> 575bd8bef88320736d2df85897dcb693cc9994e1
-  </div>
-</header>
+  </header>
   <main>
     <div class="row">
-      <div class='col-3 mx-4' id='left-column'>
+      <main class='col-3 mx-4' id='left-column'>
         <div class='row border-bottom pb-2' id='search'>
-          <h1 class='display-6' id='searchfood'><strong>Search for a Recipe(s):</strong></h1>
+          <!-- Recipe finder userinput -->
+          <h2 class='display-6' id='searchfood'><strong>Search for a Recipe(s):</strong></h2>
 
           <input class='rounded border-1' type='text' id="userInput" placeholder="Enter Recipe Keyword" />
           <br>
           <button class='my-1 mt-2 rounded' id="searchBtn" type="button">Let's get cookin'</button>
+          <button class='my-1 mt-2 rounded' id="searchBtn2" type="button"> Let's make cocktail </button>
           <div class="card mt-5" id="recent">
-            <h1 class='display-6' id='foodhistory'>Search history:</h1>
+            <h2 class='display-6' id='foodhistory'>Search history:</h2>
             <ul class="list-group list-group-flush" id="recently-searched-list">
             </ul>
             <button class='my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
           </div>
+
         </div>
-  </main>
-<!-- 1st recipe -->
-<div id="recipe-container">
-  <div class="recipe">
-    <div class="recipe-title"> Recipe Title </div>
-    <div class="recipe-photo">
-      <img src="./images/recipe-img.PNG" alt="food-photo">
-    </div>
-    <div class="recipe-instruction">
-      <ul>
-        <li> Time Prepare: </li>
-        <a class = "view-btn" href="#"> View Recipe </a>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- 2nd recipe -->
-<div id="recipe-container">
-  <div class="recipe">
-    <div class="recipe-title"> Recipe Title </div>
-    <div class="recipe-photo">
-      <img src="./images/recipe-img.PNG" alt="food-photo">
-    </div>
-    <div class="recipe-instruction">
-      <ul>
-        <li> Time Prepare: </li>
-        <a class = "view-btn" href="#"> View Recipe </a>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- 3rd recipe  -->
-<div id="recipe-container">
-  <div class="recipe">
-    <div class="recipe-title"> Recipe Title </div>
-    <div class="recipe-photo">
-      <img src="./images/recipe-img.PNG" alt="food-photo">
-    </div>
-    <div class="recipe-instruction">
-        <p class="time"> Time Prepare: </p>
-        <a class = "view-btn" href="#"> View Recipe </a>
       
-    </div>
-  </div>
-</div>
+    <!----------------results area ----------------------------->
 
+    <!-- <div class="recipe"></div>
+    <div class="output is-flex is-justify-content-space-evenly is-align-items-center"></div> -->
+        
+    
+      </main>
+    <div class="search-result">  
+          <!-- 1st recipe  -->
+           <!-- <div class="recipe-container"> 
+            <div class="recipe">
+              <div class="recipe-title"> Recipe Title </div>
+              <div class="recipe-photo">
+                <img src="./images/recipe-img.PNG" alt="food-photo">
+              </div>
+              <div class="recipe-instruction">
+                <h6 class="time"> Time Prepare: </h6>
+                <h6 class="calories"> Calories: </h6>
+                <a class="view-btn" href="#"> View Recipe </a>
+              </div>
+            </div>
+          </div>  -->
 
-  <!-- <div class="product"> </div>
-  <div class="product"></div>
-  <div class="product"></div> -->
-  
+          <!-- 2nd recipe -->
+          <!-- <div id="recipe-container">
+            <div class="recipe">
+              <div class="recipe-title"> Recipe Title </div>
+              <div class="recipe-photo">
+                <img src="./images/recipe-img.PNG" alt="food-photo">
+              </div>
+              <div class="recipe-instruction">
+                <h6 class="time"> Time Prepare: </h6>
+                <h6 class="calories"> Calories: </h6>
+                <a class="view-btn" href="#"> View Recipe </a>
+              </div>
+            </div>
+          </div> -->
 
-  <script src="./script.js"></script>
-<<<<<<< HEAD
-  <!-- End Document
-=======
+          <!-- 3rd recipe  -->
+          <!-- <div id="recipe-container">
+            <div class="recipe">
+              <div class="recipe-title"> Recipe Title </div>
+              <div class="recipe-photo">
+                <img src="./images/recipe-img.PNG" alt="food-photo">
+              </div>
+              <div class="recipe-instruction">
+                <h6 class="time"> Time Prepare: </h6>
+                <h6 class="calories"> Calories: </h6>
+                <a class="view-btn" href="#"> View Recipe </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
-  crossorigin="anonymous"></script>
-<!-- End Document
->>>>>>> 575bd8bef88320736d2df85897dcb693cc9994e1
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="./script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+          integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+          function basicPopup(url) {
+            popupWindow = window.open(url, 'action', 'height=550,width=800,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
+          }
+        </script>
 </body>
 
 </html>
