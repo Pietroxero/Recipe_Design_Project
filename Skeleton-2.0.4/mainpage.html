@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -15,13 +16,13 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Pacifico&display=swap" rel="stylesheet">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="./css/mainpage.css">
+  <!-- <link rel="stylesheet" href="./css/mainpage.css"> -->
   <link rel="stylesheet" href="./css/style.css">
 
 
@@ -30,13 +31,14 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-  <h1>Recipes By Keywords</h1>
-</div>
+  <header>
+  
+    <h1>Recipes By Keywords</h1>
 
 <div class="container">
   <div class="row">
@@ -57,8 +59,6 @@
               <input class ='rounded border-1'type = 'text' id ="userInput" placeholder="Enter Recipe Keyword"/>
               <br>
               <button class = 'my-1 mt-2 rounded' id ="searchBtn" type ="button">Let's get cookin'</button>
-              <div id="output">
-              <a href=""id="sourceLink"></a>
               <div class="card mt-5" id="recent">
                   <h2 class ='display-6' id='foodhistory'>Search history:</h2>
                   <ul class="list-group list-group-flush" id="recently-searched-list">
@@ -72,10 +72,6 @@
 <div class="product"></div>
 <div class="product"></div>
 
-<footer>
-  <p>🥘Made with the Finest Ingredients🍔</p>
-</footer>
-
   <script src="./script.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
@@ -83,4 +79,5 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>
