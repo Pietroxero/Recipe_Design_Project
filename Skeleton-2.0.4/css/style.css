@@ -117,6 +117,21 @@ background-repeat: no-repeat;
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 75px;
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
 }
 
 .search-box {
