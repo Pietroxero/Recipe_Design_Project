@@ -13,13 +13,7 @@ const options = {
 	}
 };
 
-fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?tags=vegetarian%2Cdessert&number=1', settings)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
-
-
+//DB cocktail
 //cocktail api set up
 const settings = {
 	method: 'GET',
@@ -65,7 +59,7 @@ searchBtn.addEventListener('click', function (event) {
 						cal.innerHTML = ' Serving: ';
 						var viewRec = document.createElement("a");
 						viewRec.className = 'view-btn';
-						viewRec.href = response1.sourceUrl
+						viewRec.href = response1.sourceUrl;
 						viewRec.innerHTML = ' View Recipe ';
 
 						recipeTitle.innerHTML = response.results[i].title;
@@ -82,7 +76,7 @@ searchBtn.addEventListener('click', function (event) {
 						
 						recipeCon.appendChild(recipeCard);
 						searchResult.appendChild(recipeCon);
-						console.log(recipeCon);
+						// console.log(recipeCon);
 			}
 					)}
 					})
@@ -160,4 +154,3 @@ function basicPopup(url) {
 popupWindow = window.open(url,'action','height=550,width=800,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
 }
 </script>
-})

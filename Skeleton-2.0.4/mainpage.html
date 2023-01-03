@@ -51,7 +51,7 @@
 </div>
 </div>
 <main>
-  <div class="row">
+  <!-- <div class="row">
       <div class='col-3 mx-4' id='left-column'>
           <div class ='row border-bottom pb-2'id = 'search'>
               <h2 class ='display-6' id='searchfood'><strong>Search for a Recipe(s):</strong></h2>
@@ -65,12 +65,21 @@
                    </ul> 
                    <button class = 'my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
                 </div>
-  </div>
+  </div> -->
 </main>
 
-<div class="product"></div>
-<div class="product"></div>
-<div class="product"></div>
+          <input class='rounded border-1' type='text' id="userInput" placeholder="Enter Recipe Keyword" />
+          <br>
+          <!-- button for food recipe -->
+          <button class='my-1 mt-2 rounded' id="searchBtn" type="button">Let's get cookin'</button>
+          <!-- button for cocktail recipe -->
+          <button class='my-1 mt-2 rounded' id="searchBtn2" type="button"> Let's make cocktail </button>
+          <div class="card mt-5" id="recent">
+            <h2 class='display-6' id='foodhistory'>Search history:</h2>
+            <ul class="list-group list-group-flush" id="recently-searched-list">
+            </ul>
+            <button class='my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
+          </div>
 
   <script src="./script.js"></script>
 
