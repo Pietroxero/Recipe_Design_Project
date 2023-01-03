@@ -59,7 +59,7 @@ searchBtn.addEventListener('click', function (event) {
 						cal.innerHTML = ' Serving: ';
 						var viewRec = document.createElement("a");
 						viewRec.className = 'view-btn';
-						viewRec.href = response1.sourceUrl
+						viewRec.href = response1.sourceUrl;
 						viewRec.innerHTML = ' View Recipe ';
 
 						recipeTitle.innerHTML = response.results[i].title;
@@ -76,7 +76,7 @@ searchBtn.addEventListener('click', function (event) {
 						
 						recipeCon.appendChild(recipeCard);
 						searchResult.appendChild(recipeCon);
-						console.log(recipeCon);
+						// console.log(recipeCon);
 			}
 					)}
 					})
