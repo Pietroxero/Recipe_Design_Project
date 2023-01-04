@@ -1,10 +1,11 @@
-
+// setting arrays for reference
 var searchForm = document.querySelector('main');
 var searchResult = document.querySelector('.search-result');
 let userInput = document.querySelector("#userInput");
 
 
-//spoonacular 
+//spoonacular API that will be used to fetch and pull ingredients using rapid API
+//based on documentation from rapid API
 const options = {
 	method: 'GET',
 	headers: {
@@ -14,7 +15,7 @@ const options = {
 };
 
 //DB cocktail
-//cocktail api set up
+//cocktail api set up based on documentation from rapid API
 const settings = {
 	method: 'GET',
 	headers: {
@@ -23,9 +24,19 @@ const settings = {
 	}
 };
 
+//the following will be  vars for the search buttons we will be using to fetch and append data
 
 var searchBtn = document.querySelector("#searchBtn");
 var searchCocktail = document.querySelector("#searchBtn2");
+
+
+//this function is the click event listener for the first search button to search cooking ingredients by keyword
+// within the listener event there is a the fetch request to spoonacular.
+//not only this but within this function it is also appending the mainpage of our html to display cards that will contain images, titles, prep time and ingredients to recipes.
+//this will also show a variety of cards not just one ingredient or recipe
+//the cards themselves have the ability to be clicked and the user will be redirected to a webpage containing full details of the recipe they have chosen
+
+jQuery(document).ready(function($){
 
 searchBtn.addEventListener('click', function (event) {
 	// console.log('click')
@@ -38,6 +49,8 @@ searchBtn.addEventListener('click', function (event) {
 				fetch(`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${response.results[i].id}/information`, options)
 					.then(response => response.json())
 					.then(response1=> {
+						console.log(response.data)
+
 						// console.log("RESPONSE1", response1)
 						var recipeCon = document.createElement("div");
 						recipeCon.className = 'recipe-container recipe';
@@ -86,10 +99,14 @@ searchBtn.addEventListener('click', function (event) {
 
 		
 
-
+//this function is the click event listener for the second search button to search cocktails and their instructions using the alcohol keyword (ex: gin)
+// within the listener event there is a the fetch request to thecocktailDB.com.
+//not only this but within this function it is also appending the mainpage of our html to display cards that will contain images, titles,   ingredients to the cocktail recipe
+//this will also show a variety of options not just 1
 searchCocktail.addEventListener('click', function (event){
 	fetch(`https://the-cocktail-db.p.rapidapi.com/search.php?s=${userInput.value}`, settings)
 	.then(response => response.json())
+	
 	.then(response => {
 		console.log("cocktail: ", response)
 		for (let i = 0; i < 10; i++) {
@@ -147,8 +164,62 @@ searchCocktail.addEventListener('click', function (event){
 	})
 				
 	.catch(err => console.error(err));
+	
+}) 
 
-})
+//clear button function
+$("#clrhistoryBtn").on("click", function () {
+	// console.log(onclick);
+	localStorage.clear();
+	$("#recently-searched-list").empty();
+  });
+
+
+  //this function will save the locations from our user input to the array and our localstorage
+// function saveLocal(data){
+//     var city = data.city.name;
+//     locations.unshift(city);
+//     localStorage.setItem('locations', JSON.stringify(locations));
+// }
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// })
 /* <script>
 function basicPopup(url) {
 popupWindow = window.open(url,'action','height=550,width=800,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')

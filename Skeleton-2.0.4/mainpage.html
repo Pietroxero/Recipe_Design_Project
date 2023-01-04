@@ -14,6 +14,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+  crossorigin="anonymous"></script>
+
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
@@ -41,7 +44,7 @@
   
     <h1>Recipes By Keywords</h1>
 
-<!-- <div class="container">
+<div class="container">
   <div class="row">
    <div class="two-half column">
 <a class="button button-primary" href="#">Food</a>
@@ -50,7 +53,7 @@
 <button class="button-primary">Contact</button>
 </div>
 </div>
-</div> -->
+</div>
 <main>
 
   
@@ -70,25 +73,24 @@
                 </div>
   </div> -->
 </main>
-
+<!-- button with ID of 'searchbtn' will be the button used to search for recipes -->
+<!-- button with ID of 'searchbtn2' will be the button used to search for cocktails -->
           <input class='rounded border-1' type='text' id="userInput" placeholder="Enter Recipe Keyword" />
           <br>
           <!-- button for food recipe -->
-          <button class='button-primary' id="searchBtn" type="button">Let's get cookin'</button>
+          <button class='my-1 mt-2 rounded' id="searchBtn" type="button">Let's get cookin'</button>
           <!-- button for cocktail recipe -->
-          <button class='button-primary' id="searchBtn2" type="button"> Let's make cocktail </button>
+          <button class='my-1 mt-2 rounded' id="searchBtn2" type="button"> Let's make cocktail </button>
           <div class="card mt-5" id="recent">
             <h2 class='display-6' id='foodhistory'>Search history:</h2>
             <ul class="list-group list-group-flush" id="recently-searched-list">
             </ul>
-            <button class='button-primary' id='clrhistoryBtn'>Clear History</button>
+            <button class='my-1 mt-2 rounded' id='clrhistoryBtn'>Clear History</button>
           </div>
-          <div class="search-result"></div>
 
   <script src="./script.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
-  crossorigin="anonymous"></script>
+  
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
