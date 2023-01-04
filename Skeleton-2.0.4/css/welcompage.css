@@ -12,6 +12,7 @@ h1 {
     margin: auto;
     font-family: 'Pacifico', cursive;
     font-size: 75px;
+    text-shadow: 3px 3px 3px #ababab;
 }
 
 .middle{
@@ -40,10 +41,13 @@ h1 {
   
   
   .container img {
+    border-radius: 20px;
     position: relative; 
     transition: .5s ease;
     width: auto;
     height: auto;
+    box-shadow: 5px 5px 5px 2px whitesmoke;
+
   }
 
 
