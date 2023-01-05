@@ -42,15 +42,27 @@ background-repeat: no-repeat;
 
 /* } */
 .container {
-    justify-content: flex-end;
-    padding-left: 50px;
+    /* justify-content: flex-end;
+    padding-left: 50px; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .recipe-container {
     display:inline-block;
-    justify-content: center;
-    align-items: flex-start;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
     padding: 25px;
-    grid-template:auto / repeat(auto-fit, minmax(300px, 1fr)) ;
+    /* grid-template:auto / repeat(auto-fit, minmax(300px, 1fr)) ; */
+
+    position: relative;
+    background: #fff;
+    max-width: 350px;
+    width: 350px;
+    margin: 20px;
+    border-radius: 10px;
 }
 .recipe {
     height: 300px;
@@ -62,17 +74,21 @@ background-repeat: no-repeat;
     height: 50px;
     /* display: flex; */
     align-items: center;
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    font-family: Satisfy;
 
 }
 .recipe-photo {
-    height: 210px;
+    /* height: 210px; */
+    max-height: 200px;
+    overflow: hidden;
 }
 
 .recipe-photo img {
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
+    max-width: 100%;
+    height: auto;
 }
 .recipe-instruction {
     height: 120px;
@@ -80,12 +96,22 @@ background-repeat: no-repeat;
     opacity: 0;
     transition: all 200ms ease-in-out;
     margin-top: 10px;
-    background: #362626;
+    background: lightgray;
     overflow: hidden;
     overflow-y: auto;
     transition: all 200ms ease-in-out;
     color: white;
+
+    position: relative;
+    color: #222;
+    padding: 3px;
+
 }
+
+.button {
+    background-color: #33c3f0;
+}
+
 .recipe-instruction ul {
     list-style-type: circle;
     list-style-position: inside;
@@ -108,9 +134,11 @@ background-repeat: no-repeat;
     text-decoration: none;
     text-align: center;
     width: 130px;
-    padding: 10px 0;
-    background-color: white;
+    padding: 10px ;
+    color: #FFFFFF;
+    background-color: #33c3f0;
     font-size: 1.4rem;
+    border-radius: 10px;
 }
 
 
@@ -121,7 +149,21 @@ h1 {
     animation-delay: 1s;
     visibility: hidden;
     animation-fill-mode: forwards;
+    text-shadow: 3px 3px 3px #ababab;
 }
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h6 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
 
 @keyframes movedown{
     0%{
