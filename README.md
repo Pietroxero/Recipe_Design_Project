@@ -30,13 +30,18 @@ THEN I want to save it to favorites list
 
 
 ## Breakdown of Tasks
-Team Lead: Peter, create the repo, add team to repo, create chart task breakdown.
-Thuy: search for other options aside from bootstrap to use.
-Kevin: look for modal model structure and come up with layout for page.
+Team Lead: Peter, create the repo, add team to repo, create chart task breakdown, coordinate tasks to be done, create presentation slide, creation of html and final edits
+Thuy: search for other options aside from bootstrap to use, fetch requests, and javascripting
+Kevin: look for modal model structure and come up with layout for page, CSS editing for pages and appended elements
 
 ## Table of Contents
+Project title, user story, acceptance criteria, APIs to be used, Breakdown of Tasks, Screenshots, Link to presentation slide, Deployed website.
 
 ## Screenshots
 ![Screenshot](./assets/images/)
+
+## Presentation slide links
+https://docs.google.com/presentation/d/1kGYBp0mjtDpzuFXpFLQ1J51uw8HvbxmaWoDgpXK8cCA/edit#slide=id.g29f43f0a72_0_5
+
 
 ## Deployed Website

@@ -42,7 +42,6 @@ function getRecentRecipe(event) {
 }
 
 
-
 //spoonacular API that will be used to fetch and pull ingredients using rapid API
 //based on documentation from rapid API
 const options = {
@@ -253,3 +252,9 @@ searchCocktail.addEventListener('click', function (event) {
 })
 })
 
+// })
+/* <script>
+function basicPopup(url) {
+popupWindow = window.open(url,'action','height=550,width=800,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
+}
+</script> */
