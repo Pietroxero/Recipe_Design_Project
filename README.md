@@ -38,10 +38,18 @@ Kevin: look for modal model structure and come up with layout for page, CSS edit
 Project title, user story, acceptance criteria, APIs to be used, Breakdown of Tasks, Screenshots, Link to presentation slide, Deployed website.
 
 ## Screenshots
-![Screenshot](./assets/images/)
+![Screenshot](./assets/img/welcomepage.png)
+![Screenshot](./assets/img/welcomepagehover.png)
+![Screenshot](./assets/img/mainpage.png)
+![Screenshot](./assets/img/cocktail.png)
+![Screenshot](./assets/img/cocktailingredients.png)
+![Screenshot](./assets/img/keywordsearch.png)
+
+
 
 ## Presentation slide links
 https://docs.google.com/presentation/d/1kGYBp0mjtDpzuFXpFLQ1J51uw8HvbxmaWoDgpXK8cCA/edit#slide=id.g29f43f0a72_0_5
 
 
 ## Deployed Website
+(https://pietroxero.github.io/Recipe_Design_Project/)
