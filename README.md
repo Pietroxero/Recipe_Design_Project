@@ -17,16 +17,25 @@ SO THAT recipes specific to those keywords populate with ingredients and instruc
 ## Acceptance Criteria
 GIVEN I am using a UI to search for recipes
 WHEN I input a keyword
-THEN I presented with a list of options
+THEN I presented with a list of options in the form of cards with links to sites with more description on recipes
 THEN I am able to view to the ingredients, prep time, and cook time
-WHEN I find a recipe I like
-THEN I want to save it to favorites list
+WHEN I search a cocktail ingredient
+THEN I want to see various cocktail options with ingredients and instructions
+
 
 ## APIs to be used
 1) https://rapidapi.com/spoonacular/api/recipe-food-nutrition
     https://spoonacular.com/food-api
     https://spoonacular.com/application/frontend/downloads/spoonacular-api-slides.pdf
 2) https://rapidapi.com/thecocktaildb/api/the-cocktail-db
+
+## Future Development
+1) Search results cards: having only X amount of search history cards generate per keyword or alcohol used.
+
+2) Search History cards: having the buttons repopulate the clicked keyword to the previously displayed cards.
+
+3) Cocktail Cards: links provided similar to food cards where a button will redirect you to a website with further details on cocktail.
+
 
 
 ## Breakdown of Tasks
